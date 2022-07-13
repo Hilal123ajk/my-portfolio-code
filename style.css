@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.activeHtmlClass{
+    color: rgb(143, 4, 4) !important;
+}
+
+
+/* Main Section Starts Here  */
+
+#main-row
+{
+    background-color: #047aed;
+}
+
+#left-main-section{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#left-main-section h1{
+    font-size: 45px;
+    font-weight: bold;
+    margin: 5px 0px;
+    color: black;
+    
+}
+#left-main-section a{
+    color:black;
+    margin: 15px 0px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 19px;
+    border: 2px solid black;
+    border-radius: 5px;
+    
+}
+
+#left-main-section a:hover{
+    background-color: #FFF03D;
+    color: black;
+}
+
+
+/* Media Queries Only  */
+@media screen and (max-width: 768px) {
+    #completeWebsite{
+        width: 80% !important;
+    }
+  }
+
+  @media only screen and (max-width: 415px) {
+   #contact-fiverr-upwork img{
+        height: 50px;
+        width: 50px;
+        position: relative;
+        top: -20px;
+   }
+  }
+
+  @media only screen and (max-width: 320px) {
+    #contact-fiverr-upwork img{
+         height: 50px;
+         width: 50px;
+         position: relative;
+         top: -50px;
+    }
+    #contact-right-section h1{
+        position: relative;
+        top: -5px;
+    }
+    #px-320-responsive{
+        position: relative;
+        top: -26px;
+    }
+   }
+
+   @media only screen and (max-width: 375px) {
+    #contact-right-section{
+        position: relative;
+        top: -30px;
+    }
+   }
+
+   @media only screen and (max-width: 540px) {
+       #left-contact-section img{
+           height: 45vh;
+           width: 90%;
+       }
+    #contact-right-section{
+        position: relative;
+        top: -30px;
+    }
+   }
+ 
+   @media only screen and (max-width: 280px) {
+    #contact-right-section h4{
+        font-size: 17px;
+    }
+   }
+
+/* Media Queries Only  */
+
+
+#serviceHeading{
+    font-size: 50px;
+    margin: 20px 0;
+    padding: 5px 5px;
+    font-weight: bolder;
+    font-family: 'Assistant', sans-serif;
+}
+/* Services Section Starts Here  */
+
+#completeWebsite{
+    
+    width: 78%;
+    height: 80vh;
+   background-color: #F1F2F4;
+   border-radius: 7px;
+    margin: 20px 0;
+    padding: 20px;
+    
+}
+#completWebsite img{
+    margin-bottom: 4px;
+}
+#completeWebsite p{
+    font-size: 20px;
+    font-weight: bold;
+}
+#htmlcssLink{
+    text-decoration: none;
+    color: #2662e6;
+    padding: 5px 15px;
+    margin: 10px 0;
+    border: 1px solid rgb(116, 110, 110);
+    font-weight: bold;
+    background-color: #F1F1F1;
+    border-radius: 5px;
+}
+
+#htmlcssLink:hover{
+    background-color: #FFF03D;
+    color: black;
+}
+/* Services Section Ends Here  */
+
+footer{
+    height: 10vh;
+    background-color: rgb(3, 9, 39);
+    display: grid;
+    place-items: center;
+}
+footer h4{
+    text-align: center;
+    color: white;
+}
+/* Profile Section Starts Here  */
+
+#card{
+    border-radius: 8px;
+    margin: 50px 100px;
+    width: 65%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #eeeaea;
+    box-shadow: 10px 15px 12px -6px rgba(77, 70, 70, 0.41);
+    -webkit-box-shadow: 10px 15px 12px -6px rgba(78, 69, 69, 0.41);
+    -moz-box-shadow: 10px 15px 12px -6px rgba(71, 63, 63, 0.41);
+   
+}
+
+.right-card{
+    background-color: #3a8cdd;
+    border-radius: 0 8px 8px 0;
+}
+.left-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    
+}
+.left-card button{
+    width: 150px;
+    margin: 10px 0;
+    position: relative;
+    top: 10px;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    background-color: #0c75dd;
+   
+}
+.left-card button a{
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    
+}
+.left-card h2{
+   position: relative;
+   bottom:15px;
+}
+.left-card h5{
+   position: relative;
+   bottom:15px;
+   font-family: 'Josefin Sans', sans-serif;
+   font-weight: bold;
+}
+.left-card p{
+    width: 98%;
+}
+.profile-contacts{
+    position: relative;
+    top: 40px;
+    
+}
+.profile-contacts img{
+    cursor: pointer;
+    margin: 0 10px;
+}
+.profile-contacts img:hover{
+   
+    animation:spin 1s linear 1;
+}
+
+@keyframes spin{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* contact section starts here  */
+
+#contact-section{
+    height: 87vh;
+   
+    background-color: rgb(241, 238, 238);
+}
+
+#contact-right-section{
+    margin: 0 30px;
+}
+
+#contact-right-section img{
+    cursor: pointer;
+}
